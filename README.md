@@ -1,8 +1,8 @@
-# Calculator
+# Student Grade Calculator
 
 ## Overview
 
-### This is a Project on JavaScript, that performs addition, subtraction, multiplication and division!
+### This is a Project on JavaScript, to display result of student!
 
 ![](./media/design.png)
 
