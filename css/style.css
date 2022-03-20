@@ -85,12 +85,10 @@ span{
 @keyframes head{
     0%{
         font-size: 2rem;
-        /* transform: translateY(-12px); */
     }
 
     100%{
         font-size: 2.4rem;
-        /* transform: translateY(22px); */
     }
 }
 
