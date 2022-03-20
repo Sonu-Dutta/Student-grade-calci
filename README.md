@@ -2,9 +2,15 @@
 
 ## Overview
 
-### This is a Project on JavaScript, to display result of student!
-
+### This is a Project on JavaScript, to display result of student which includes total marks, percentage and grade!
 ![](./media/design.png)
+
+#### There are certain criteria:
+##### 1) If the user don't enter marks before submitting rather it be single or multiple, then it shows error!
+![](./media/emp.png)
+
+##### 1) If the user enters negative marks or greater than 100 then it shows error!
+![](./media/valid.png)
 
 ## My process
 
