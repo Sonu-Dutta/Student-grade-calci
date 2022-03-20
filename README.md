@@ -9,7 +9,7 @@
 ##### 1) If the user don't enter marks before submitting rather it be single or multiple, then it shows error!
 ![](./media/emp.png)
 
-##### 1) If the user enters negative marks or greater than 100 then it shows error!
+##### 2) If the user enters negative marks or greater than 100 then it shows error!
 ![](./media/valid.png)
 
 ## My process

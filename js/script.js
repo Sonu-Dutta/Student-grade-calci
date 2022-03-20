@@ -35,7 +35,7 @@ const calci =() =>{
         grade='F';
     }
     if(parseFloat(sub1)>100 || parseFloat(sub1)<0 || parseFloat(sub2)>100 || parseFloat(sub2)<0 ||parseFloat(sub3)>100 || parseFloat(sub3)<0 ||parseFloat(sub4)>100 || parseFloat(sub4)<0 ||parseFloat(sub5)>100 || parseFloat(sub5)<0){
-        document.getElementById('showData').innerHTML=`<h3 style="color:yellow">Enter valid marks between 0 to 100!</h3>`
+        document.getElementById('showData').innerHTML=`<h3 style="color:yellow">Please enter valid marks between 0 to 100!</h3>`
     }
     else if(sub1=="" || sub2=="" || sub3=="" || sub4=="" || sub5==""){
         document.getElementById('showData').innerHTML=`<h3 style="color:yellow">Please fill the details!</h3>`
