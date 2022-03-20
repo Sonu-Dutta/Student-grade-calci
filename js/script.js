@@ -8,6 +8,7 @@ const calci =() =>{
 
     let total=parseFloat(sub1)+parseFloat(sub2)+parseFloat(sub3)+parseFloat(sub4)+parseFloat(sub5);
     let per=(total/500)*100;
+    per=per.toFixed(2);
 
     if(per<=100 && per>=80){
         grade='A';
@@ -20,10 +21,17 @@ const calci =() =>{
     }else{
         grade='F';
     }
-    if(per>=39.5){
-        document.getElementById('showData').innerHTML=`Out of 500 your total is ${total} and percentage is ${per}%. <br> Your grade is ${grade}.<h4 style="color:lightgreen">Pass!</h4>`
+    if(parseFloat(sub1)>100 || parseFloat(sub1)<0 || parseFloat(sub2)>100 || parseFloat(sub2)<0 ||parseFloat(sub3)>100 || parseFloat(sub3)<0 ||parseFloat(sub4)>100 || parseFloat(sub4)<0 ||parseFloat(sub5)>100 || parseFloat(sub5)<0){
+        document.getElementById('showData').innerHTML=`<h3 style="color:yellow">Enter valid marks between 0 to 100!</h3>`
     }
-    else{
-        document.getElementById('showData').innerHTML=`Out of 500 your total is ${total} and percentage is ${per}%. <br> Your grade is ${grade}. <h4 style="color:red">Fail!</h4>`
+    else if(sub1=="" || sub2=="" || sub3=="" || sub4=="" || sub5==""){
+        document.getElementById('showData').innerHTML=`<h3 style="color:yellow">Please fill the details!</h3>`
     }
+   else if(per>=35 && sub1>35 && sub2>35 && sub3>35 && sub4>35 && sub5>35){
+        document.getElementById('showData').innerHTML=`Marks: ${total}/500 <br> Percentage: ${per}% <br>Grade: ${grade}<h4 style="color:lightgreen">Pass!</h4>`
+    }
+     else{
+        document.getElementById('showData').innerHTML=`Marks: ${total}/500 <br> Percentage: ${per}% <br>Grade: ${grade}<h4 style="color:orange">Fail!</h4>`
+    }
+    
 }
